@@ -1,0 +1,37 @@
+{
+  "name": "jwt_express",
+  "version": "1.0.0",
+  "description": "JWT Token with express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhilkadyan/jwt_express.git"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "Nikhil Kadyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikhilkadyan/jwt_express/issues"
+  },
+  "homepage": "https://github.com/nikhilkadyan/jwt_express#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.11",
+    "razorpay": "^2.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

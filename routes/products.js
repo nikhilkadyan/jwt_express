@@ -1,7 +1,7 @@
 const router = require('express').Router()
 const Product = require('../models/Product')
 const auth = require('./verifyToken')
-const { createValidation, updateValidation } = require('../validations/Product')
+const { createValidation, updateValidation } = require('../validations/product')
 
 // Get All Product
 router.get('/', async (req, res) => {

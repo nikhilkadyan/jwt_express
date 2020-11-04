@@ -27,4 +27,4 @@ app.use('/api/products', require('./routes/products'));
 app.use('/api/transactions', require('./routes/transactions'));
     
 // Start Server
-app.listen(3000, () => console.log(`Server Started`))
+app.listen(process.env.PORT || 5000, () => console.log(`Server Started`))

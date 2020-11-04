@@ -25,6 +25,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/projects', require('./routes/projects'));
 app.use('/api/products', require('./routes/products'));
 app.use('/api/transactions', require('./routes/transactions'));
+app.use('/api/razorpay', require('./routes/razorpay'));
     
 // Start Server
 app.listen(process.env.PORT || 5000, () => console.log(`Server Started`))

@@ -1,21 +1,24 @@
 const mongoose = require('mongoose');
 
-const userSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        max: 255,
-        min: 6
-    },
-    username: {
+const projectSchema = new mongoose.Schema({
+    title: {
         type: String,
         required: true,
         max: 255,
         min: 6
     },
-    password: {
+    desc: {
         type: String,
         required: true,
-        max: 2048,
+        min: 6
+    },
+    link: {
+        type: String,
+        required: true,
+        min: 6
+    },
+    source: {
+        type: String,
         min: 6
     },
     date: {
@@ -24,4 +27,4 @@ const userSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('Project', projectSchema);

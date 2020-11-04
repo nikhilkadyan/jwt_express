@@ -1,21 +1,23 @@
 const mongoose = require('mongoose');
 
-const userSchema = new mongoose.Schema({
-    name: {
+const transactionSchema = new mongoose.Schema({
+    uid: {
         type: String,
-        max: 255,
         min: 6
     },
-    username: {
+    payment_method: {
         type: String,
         required: true,
-        max: 255,
         min: 6
     },
-    password: {
+    product_name: {
         type: String,
         required: true,
-        max: 2048,
+        min: 6
+    },
+    download: {
+        type: String,
+        required: true,
         min: 6
     },
     date: {
@@ -24,4 +26,4 @@ const userSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('Transaction', transactionSchema);
